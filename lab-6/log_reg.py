@@ -4,11 +4,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score, roc_auc_score, roc_curve
 
 # Sample data
-data = pd.DataFrame({
-    'Hours_Studied': [3.745401188, 9.507143064, 7.319939418, 5.986584842],
-    'Review_Session': [0, 1, 0, 1],
-    'Results': [0, 1, 1, 1]
-})
+data = pd.read_csv("/Users/wnr/Documents/umbc/is428/labs/lab6/student_data.csv")
 
 # Step 1: Scatter plot visualization
 fig, ax = plt.subplots()
